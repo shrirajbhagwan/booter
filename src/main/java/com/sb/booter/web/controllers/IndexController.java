@@ -1,14 +1,14 @@
-package com.sb.booter.controller;
+package com.sb.booter.web.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class HelloSBController {
-	
+public class IndexController {
+
 	@RequestMapping("/")
-	public String hello(){
+	public String home(){
 		return "index";
 	}
-
+	
 }
