@@ -9,12 +9,17 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class I18NService {
+	
+	
+	/*Application Logger*/
+	private static final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger(I18NService.class);
 
 	@Autowired
 	private MessageSource messageSource;
 
 	
 	public String getMessage(String messageId){
+		LOG.info("Getting value for {}",messageId);
 		Locale locale = LocaleContextHolder.getLocale();
 		return getMessage(messageId, locale);
 	}
