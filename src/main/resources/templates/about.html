@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/header :: common-head" />
+
+<body>
+
+<div th:replace="common/menu :: common-menu" />
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1 th:text="#{aboutUs.h1}"></h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br /> All you get is this text and a
+            mostly barebones HTML document.</p>
+    </div>
+
+</div><!-- /.container -->
+<div th:replace="common/scripts-include :: common-scripts" />
+</body>
+
+</html>
